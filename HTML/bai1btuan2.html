@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, INITIAL-SCALE=1.0" />
+    <title>BAI TAP 01</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+        #container {
+            margin-top: 20px;
+            width: 900px;
+            height: 460px;
+            border: 1px solid red;
+        }
+        
+        header {
+            height: 100px;
+            border-bottom: 1px solid red;
+            text-align: center;
+            line-height: 100px;
+        }
+        
+        header h1 {
+            color: #9f2c2d;
+            font-style: italic;
+            text-shadow: 10px 10px 3px #e2a8a9;
+        }
+        
+        #menu1 ul li a,
+        #menu2 ul li a {
+            color: red;
+        }
+        
+        .back {
+            color: red;
+        }
+        
+        .menu {
+            padding-left: 80px;
+            background-color: #ea9598;
+            height: 60px;
+            line-height: 60px;
+        }
+        
+        .menu li {
+            display: inline-block;
+            text-align: center;
+            border-right: 1px solid blue;
+            width: 150px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .menu img {
+            width: 30px;
+        }
+        
+        .menu .search {
+            position: relative;
+            top: -61px;
+            right: -550px;
+        }
+        
+        .menu .trai {
+            border-left: 1px solid blue;
+        }
+        
+        #ho {
+            color: rgb(210, 119, 8);
+            text-transform: uppercase;
+        }
+        
+        #starters,
+        #desserts {
+            background-color: beige;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1>EXAMPLE CAFE MENU</h1>
+        </header>
+
+        <ul class="menu">
+            <img src="../img/icons8-home-50.png">
+            <li class="trai"><a href="#starters">Starters</a></li>
+            <li><a href="#main-courses">Main Courses</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+
+            <div class="search">
+                <input type="text" placeholder="">
+                <button>Go</button>
+            </div>
+        </ul>
+        <h1 id="starters">Starters</h1>
+        <div id="menu1">
+            <ul>
+                <li>Chestnut and Mushroom Goujons <a href="#">(v)</a></li>
+                <li>Goat Cheese Salad <a href="#">(v)</a></li>
+                <li><b id="ho">Honey Soy Chicken Kebabs <a href="#">(v)</a></b></li>
+                <li>Seafood Salad <a href="#">(v)</a></li>
+            </ul>
+        </div>
+        <a href="#" class="back"><b>Back to top</b></a>
+
+        <h1 id="desserts">Desserts</h1>
+        <div id="menu2">
+            <ul>
+                <li>Lemon Sorbet <a href="#">(v)</a></li>
+                <li>Chocolate Mud Pie <a href="#">(v)</a></li>
+                <li>Pecan Pie <a href="#">(v)</a></li>
+                <li>Selection of Fine Cheeses from Around the World <a href="#">(v)</a></li>
+            </ul>
+        </div>
+        <a href="#" class="back"><b>Back to top</b></a>
+
+    </div>
+</body>
+
+</html>

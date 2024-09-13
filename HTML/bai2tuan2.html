@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAI TAP 02</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        
+        #container {
+            width: 900px;
+            height: auto;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+        
+        header {
+            position: relative;
+            width: 100%;
+            height: 110px;
+            background-image: url(../img/background.png);
+        }
+        
+        header h2 {
+            position: absolute;
+            color: white;
+            top: 30px;
+            left: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+        }
+        
+        header h5 {
+            position: absolute;
+            color: white;
+            top: 60px;
+            left: 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+        }
+        
+        header img {
+            position: absolute;
+            width: 70px;
+            top: 10px;
+            left: 15px;
+        }
+        
+        nav {
+            width: 100%;
+            height: 30px;
+            background-color: rgb(184, 181, 181);
+            line-height: 30px;
+        }
+        
+        nav li {
+            display: inline-block;
+            width: 70px;
+        }
+        
+        nav li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        nav a:hover {
+            color: black;
+        }
+        
+        section {
+            width: 71%;
+            height: 540px;
+            float: left;
+            padding-left: 10px;
+        }
+        
+        article {
+            width: 100%;
+            height: 48%;
+            margin-top: 15px;
+        }
+        
+        article #ar1,
+        article #ar3 {
+            width: 49%;
+            float: left;
+            border: 1px solid gainsboro;
+            padding: 5px;
+        }
+        
+        article #ar2,
+        article #ar4 {
+            width: 51%;
+            float: left;
+            color: rgb(131, 125, 125);
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+        
+        .pink {
+            color: rgb(248, 116, 138);
+            padding-bottom: 10px;
+        }
+        
+        aside {
+            width: 29%;
+            height: 540px;
+            float: left;
+            border-left: 0.3px solid rgb(218, 217, 217);
+            padding-left: 20px;
+        }
+        
+        aside #k1 h2 {
+            padding-top: 30px;
+            color: rgb(248, 116, 138);
+            padding-bottom: 10px;
+        }
+        
+        aside #k1 ul li {
+            padding: 10px;
+            margin-left: -30px;
+            border-bottom: 0.3px solid rgb(218, 217, 217);
+            color: rgb(248, 116, 138);
+            display: block;
+            margin-right: 30px;
+        }
+        
+        aside #k2 h2 {
+            color: rgb(248, 116, 138);
+            padding-bottom: 20px;
+            padding-top: 30px;
+        }
+        
+        aside #k2 ul li {
+            color: rgb(131, 125, 125);
+            margin-left: -40px;
+            display: block;
+            line-height: 20px;
+        }
+        
+        footer {
+            clear: both;
+            width: 100%;
+            height: 30px;
+            line-height: 40px;
+            background-color: rgb(172, 169, 169);
+            color: white;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="../IMG/logo.png">
+            <h2>YOKO'S KITCHEN</h2>
+            <h5>JAPANESE COOKING CLASSES</h5>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">classes</a></li>
+                <li><a href="#">catering</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <div id="ar1">
+                    <img src="../IMG/bokchoi.jpg" alt=""> Bok Choi
+                </div>
+                <div id="ar2">
+                    <h2>Japanese Vegetarian</h2>
+                    <p class="pink">Five week course in London</p>
+                    <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <div id="ar3">
+                    <img src="../img/teriyaki.jpg" alt=""> Teriyaki Sauce
+                </div>
+                <div id="ar4">
+                    <h2>Sauces Masterclass</h2>
+                    <p class="pink">One day workshop</p>
+                    <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+                </div>
+            </article>
+        </section>
+        <aside>
+            <div id="k1">
+                <h2>Popular Recipies</h2>
+                <ul>
+                    <li>Yakitori (grilled chicken)</li>
+                    <li>Tsukune (minced chicken patties)</li>
+                    <li>Okonomiyaki (savory pancakes)</li>
+                    <li>Mizutaki (chicken stew)</li>
+                </ul>
+            </div>
+
+            <div id="k2">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Yoko's Kitchen</li>
+                    <li>27 Redchurch Street</li>
+                    <li>Shoreditch</li>
+                    <li>London E2 7DP</li>
+                </ul>
+            </div>
+        </aside>
+        <footer>
+            <p>© 2011 Yoko's Kitchen</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
